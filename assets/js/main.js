@@ -73,24 +73,15 @@ const showNextPage = () => {
 }
 
 //Get the document
-pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
+pdfjsLib
+  .getDocument(url)
+  .promise.then(pdfDoc_ => {
     pdfDoc = pdfDoc_;
-    
-    //Get total number of pages
+
     document.querySelector('#page-count').textContent = pdfDoc.numPages;
 
-    //Display what page on
-    renderPage(pageNum)
-})
-.catch(err => {
-    //Display error
-    const div = document.createElement('div');
-    div.className = 'error';
-    div.appendChild(document.createTextNode(err.message));
-    document.querySelector('body').insertBefore(div, canvas);
-    //Remove topbar
-    document.querySelector('.top-bar').style.display="none";
-});
+    renderPage(pageNum);
+  });
 
 //Button events
 document.querySelector('#prev-page').addEventListener('click', showPrevPage);
