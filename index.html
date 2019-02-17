@@ -13,9 +13,41 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-
+        <header>
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="btn" id="prev-page">
+                                <i class="fas fa-arrow-circle-left"></i> Prev Page
+                            </button>
+                        </div><!-- ./col -->
+                        <div class="col-lg-4">
+                            <span class="page-info">
+                                Page <span id="page-num"></span> of <span id="page-count"></span>
+                            </span><!-- ./page-info -->
+                        </div><!-- ./col -->
+                        <div class="col-lg-4">
+                            <button class="btn" id="next-page">
+                                <i class="fas fa-arrow-circle-right"></i> Next Page
+                            </button>
+                        </div><!-- ./col -->
+                    </div><!-- ./row -->
+                </div><!-- ./container -->
+            </div><!-- ./top-bar -->
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        
+                    </div><!-- ./col -->
+                </div><!-- ./row -->
+            </div><!-- ./container -->
+        </main>
 
         <!-- load Javascript files -->
+        <script src="assets/js/bootstrap.min.js"></script>
         <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
