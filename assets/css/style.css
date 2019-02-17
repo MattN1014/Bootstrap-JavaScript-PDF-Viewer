@@ -1,0 +1,43 @@
+/*Main reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+header .top-bar {
+    padding: .8rem 0;
+}
+
+header .top-bar .btn-left {
+    text-align: left;
+}
+
+header .top-bar .info {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: .4rem 0;
+    text-align: center;
+}
+
+header .top-bar .btn-right {
+    text-align: right;
+}
+
+header .top-bar .btn {
+    background-color: darkorange;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    padding: .7rem 2rem;
+}
+
+header .top-bar .btn:hover {
+    opacity: 0.8;
+}
